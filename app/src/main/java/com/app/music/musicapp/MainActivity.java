@@ -21,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
     LinearLayout activity_playlist;
     @BindView(R.id.view_recents)
     LinearLayout activity_recents;
+    @BindView(R.id.view_now_playing)
+    ConstraintLayout activity_now_playing;
 
 
     @Override
@@ -42,6 +44,27 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 sendIntent(Store.class);
+            }
+        });
+
+        activity_playlist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sendIntent(Playlist.class);
+            }
+        });
+
+        activity_recents.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sendIntent(Recents.class);
+            }
+        });
+
+        activity_now_playing.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sendIntent(NowPlaying.class);
             }
         });
     }

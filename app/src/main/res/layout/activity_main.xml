@@ -199,6 +199,7 @@
     </LinearLayout>
 
     <android.support.constraint.ConstraintLayout
+        android:id="@+id/view_now_playing"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/white"

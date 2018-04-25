@@ -19,13 +19,4 @@ public class AllSongs extends AppCompatActivity {
         setSupportActionBar(toolbar);
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        int itemSelected = item.getItemId();
-
-        if (itemSelected == R.id.home) {
-            NavUtils.navigateUpFromSameTask(this);
-        }
-        return true;
-    }
 }
