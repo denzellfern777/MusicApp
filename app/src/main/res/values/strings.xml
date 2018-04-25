@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Music App</string>
+    <string name="title_activity_payments">Payments</string>
+    <string name="all_songs_title">All Songs</string>
+    <string name="playlist">Playlist</string>
+    <string name="store">Store</string>
+    <string name="recent">Recent</string>
+    <string name="song_title">Name of the current song on track</string>
+    <string name="artist">Artist of the current song</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="album_art">Album Art</string>
+    <string name="recent_art">Recent Art</string>
+    <string name="playlist_art">Playlist Art</string>
+    <string name="store_art">Store Art</string>
+    <string name="open">Open</string>
+    <string name="all_songs">All Songs</string>
+    <string name="track_art">Track Art</string>
+</resources>
