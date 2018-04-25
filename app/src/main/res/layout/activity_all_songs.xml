@@ -13,11 +13,11 @@
         android:theme="@style/AppTheme.AppBarOverlay">
 
         <android.support.v7.widget.Toolbar
+            android:id="@+id/all_songs_toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:id="@+id/all_songs_toolbar"
-            app:popupTheme="@style/AppTheme.PopupOverlay"
             android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
             app:title="@string/all_songs_title">
 
         </android.support.v7.widget.Toolbar>
