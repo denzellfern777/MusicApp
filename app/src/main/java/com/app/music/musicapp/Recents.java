@@ -14,6 +14,7 @@ public class Recents extends AppCompatActivity {
 
     @BindView(R.id.recent_back_btn)
     Button Back;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

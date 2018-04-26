@@ -14,9 +14,7 @@
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/activity_main_toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
+            style="@style/ToolbarStyle"
             app:popupTheme="@style/AppTheme.PopupOverlay"
             app:title="@string/app_name">
 
@@ -26,12 +24,7 @@
 
     <View
         android:id="@+id/border_top"
-        android:layout_width="match_parent"
-        android:layout_height="0.3dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
+        style="@style/BorderStyle"
         android:layout_marginTop="16dp"
         android:background="@android:color/darker_gray"
         app:layout_constraintTop_toBottomOf="@id/AppBar" />
@@ -72,7 +65,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
-            android:text="@string/all_songs"
+            android:text="@string/title_activity_all_songs"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@id/imageView2"
@@ -97,12 +90,7 @@
 
     <View
         android:id="@+id/border_bottom"
-        android:layout_width="match_parent"
-        android:layout_height="0.3dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
+        style="@style/BorderStyle"
         android:background="@android:color/darker_gray"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -110,91 +98,70 @@
 
     <LinearLayout
         android:id="@+id/view_store"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
+        style="@style/LinearLayoutStyle"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        android:background="@drawable/border"
-        android:orientation="vertical"
-        android:padding="0.3dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/border_bottom">
+        app:layout_constraintTop_toBottomOf="@id/border_bottom"
+        tools:ignore="UseCompoundDrawables">
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
+            style="@style/ThumbnailStyle"
             android:contentDescription="@string/store_art"
-            android:scaleType="centerCrop"
             android:src="@drawable/buy" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
             android:gravity="center_horizontal"
-            android:text="@string/store" />
+            android:text="@string/tiitle_activity_store" />
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/view_playlist"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
+        style="@style/LinearLayoutStyle"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
-        android:background="@drawable/border"
-        android:orientation="vertical"
-        android:padding="0.3dp"
         app:layout_constraintEnd_toStartOf="@id/view_recents"
         app:layout_constraintStart_toEndOf="@id/view_store"
-        app:layout_constraintTop_toBottomOf="@id/border_bottom">
+        app:layout_constraintTop_toBottomOf="@id/border_bottom"
+        tools:ignore="UseCompoundDrawables">
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
+            style="@style/ThumbnailStyle"
             android:contentDescription="@string/playlist_art"
-            android:scaleType="centerCrop"
             android:src="@drawable/playlist" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
             android:gravity="center_horizontal"
-            android:text="@string/playlist" />
+            android:text="@string/title_activity_playlist" />
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/view_recents"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
+        style="@style/LinearLayoutStyle"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:layout_marginTop="32dp"
-        android:background="@drawable/border"
-        android:orientation="vertical"
-        android:padding="0.3dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/border_bottom">
+        app:layout_constraintTop_toBottomOf="@id/border_bottom"
+        tools:ignore="UseCompoundDrawables">
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
+            style="@style/ThumbnailStyle"
             android:contentDescription="@string/recent_art"
-            android:scaleType="centerCrop"
             android:src="@drawable/recent" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
             android:gravity="center_horizontal"
-            android:text="@string/recent" />
+            android:text="@string/title_activity_recent" />
 
     </LinearLayout>
 
@@ -224,7 +191,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="10dp"
-            android:text="@string/song_title"
+            android:text="@string/current_song_title"
             android:textColor="@android:color/black"
             app:layout_constraintStart_toEndOf="@+id/album_art"
             app:layout_constraintTop_toTopOf="parent" />
