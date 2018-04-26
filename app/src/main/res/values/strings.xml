@@ -17,4 +17,17 @@
     <string name="track_art">Track Art</string>
     <string name="now_playing">Now Playing</string>
     <string name="song_details">Song Details</string>
+    <string name="now_playing_desc">This is the Now Playing Screen. The currently playing song is shown here. Including the control buttons for the song</string>
+    <string name="playlist_screen_disc">This is the Screen which displays the playlist in the Music App. It displays a list of songs that are added to a specific playlist</string>
+    <string name="recent_screen_disc">This is the Screen which displays the Recently played songs in the Music App.</string>
+    <string name="back_to_main_screen">Back to Main Screen</string>
+    <string name="store_screen_disc">This is the Payments Page where a user can purchase Music from the app. The app can use Google Pay API to accept payments from the user. Google Pay API is easy to integrate and official payments</string>
+    <string name="all_songs_screen_disc">This page displays a list of all the songs available in the device storage</string>
+    <string name="current_playing_song_name">Current Playing Song Name</string>
+    <string name="xyz_artist">XYZ Artist</string>
+    <string name="loop_image">loop image</string>
+    <string name="previous_image">previous Image</string>
+    <string name="play_image">play Image</string>
+    <string name="next_image">next Image</string>
+    <string name="shuffle_image">shuffle image</string>
 </resources>
